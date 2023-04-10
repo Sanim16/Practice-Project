@@ -13,7 +13,7 @@ jobs:
       - name: test code
         run: npm run test
       - name: build code
-        run: npm build
+        run: npm run build
       - name: deploy
         run: |
           echo The code is been deployed ...
