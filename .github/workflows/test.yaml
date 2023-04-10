@@ -1,5 +1,5 @@
 name: Lint Test
-on: workflow_dispatch
+on: push
 jobs:
   Lint:
     runs-on: ubuntu-latest
