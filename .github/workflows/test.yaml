@@ -1,7 +1,7 @@
-name: Lint Test
+name: Deployment Test
 on: push
 jobs:
-  Lint:
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -16,4 +16,5 @@ jobs:
         run: npm run build
       - name: deploy
         run: |
+          echo The code test is satisfactory
           echo The code is been deployed ...
