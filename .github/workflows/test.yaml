@@ -1,0 +1,13 @@
+name: Lint Test
+on: workflow_dispatch
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: lint code
+        run: .eslintrc.json
+      - name: deploy
+        run: |
+          echo The code is been deployed ...

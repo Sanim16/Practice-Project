@@ -1,0 +1,10 @@
+name: Issue Test
+on: issues
+jobs:
+  Issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: get github event
+        run: echo ${{ toJSON(github) }}
