@@ -1,5 +1,5 @@
 name: Deployment Test
-on: push
+on: workflow_dispatch
 jobs:
   Install:
     runs-on: ubuntu-latest
