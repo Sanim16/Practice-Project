@@ -1,9 +1,15 @@
 name: Events Demo
 on:
   push:
-    branches:
-      # - "main"
-      - "master"
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
+      - 'mona/octocat'
+      - 'releases/**'
+    # Sequence of patterns matched against refs/tags
+    tags:        
+      - v2
+      - v1.*
   pull_request:
     types:
       - "opened"
