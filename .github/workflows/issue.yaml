@@ -9,7 +9,7 @@ on:
       - "opened"
       - "edited"
     branches:
-      # - "main"
+      - "main"
       - "master"
 jobs:
   Deploy:
