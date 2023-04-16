@@ -6,10 +6,11 @@ on:
       - "master"
   pull_request:
     types:
-      - "opened"
-      - "edited"
+      # - "opened"
+      # - "edited"
+      - "closed"
     branches:
-      # - "main"
+      - "main"
       - "master"
 jobs:
   Deploy:
