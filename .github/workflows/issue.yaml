@@ -8,9 +8,9 @@ on:
     types:
       - "opened"
       - "edited"
-    branches:
-      - "main"
-      - "master"
+    # branches:
+    #   - "main"
+    #   - "master"
 jobs:
   Deploy:
     runs-on: ubuntu-latest
