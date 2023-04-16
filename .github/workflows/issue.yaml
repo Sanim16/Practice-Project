@@ -2,15 +2,15 @@ name: Events Demo
 on:
   push:
     branches:
-      - "main"
+      # - "main"
       - "master"
   pull_request:
     types:
       - "opened"
       - "edited"
-    branches:
-      - "main"
-      - "master"
+    # branches:
+    #   - "main"
+    #   - "master"
 jobs:
   Deploy:
     runs-on: ubuntu-latest
